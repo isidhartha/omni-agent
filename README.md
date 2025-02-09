@@ -1,151 +1,156 @@
-# OmniAgent — Autonomous Multi-Agent Software Engineer
+# OmniAgent
 
-OmniAgent is an open-source platform that orchestrates specialised AI agents to autonomously write, review, debug, and architect software. Multiple agents collaborate through structured pipelines, communicate via message-passing, and stream their work in real time.
+I built OmniAgent because I kept running into the same wall: AI coding assistants are great at answering questions, but they can't actually *do* anything. They suggest. You implement. OmniAgent flips that. It's a platform where multiple specialized AI agents work together — one writes code, one reviews it, one debugs it, one thinks about the architecture — and they hand work off to each other in a real pipeline.
 
-## Features
+The idea is that you describe a task, and the agents figure out how to tackle it from every angle without you babysitting the process.
 
-| Feature | Description |
-|---------|-------------|
-| AI Coding Agents | Multiple specialised agents: Coding, Review, Debug, Architect |
-| Task Orchestration | Chain agents into multi-step pipelines with shared context |
-| Repo Analysis | Parse git repositories, understand structure and language breakdown |
-| Autonomous Debugging | Run code, catch errors, analyse root cause, produce fixes |
-| PR Review | Diff analysis with severity-graded issues and actionable suggestions |
-| Terminal Sandbox | Subprocess execution with timeout and resource protection |
-| Architecture Generation | Generate project scaffolds, ADRs, and Mermaid diagrams |
-| Multi-Agent Collaboration | Agents share context; results flow from step to step |
-| Streaming UI | WebSocket-based real-time output in a dark-theme React dashboard |
+---
 
-## Architecture
+## What it does
 
-```mermaid
-graph TB
-    Browser["Browser (React + Vite)"]
-    Backend["FastAPI Backend"]
-    Orchestrator["Orchestrator"]
-    CA["CodingAgent"]
-    RA["ReviewAgent"]
-    DA["DebugAgent"]
-    AA["ArchitectAgent"]
-    Sandbox["Sandbox (subprocess)"]
-    GitTools["GitTools"]
-    Redis["Redis"]
-    PG["PostgreSQL"]
-    LLM["LLM Provider\n(OpenAI / Anthropic)"]
+**Coding agent** — Takes a description of what you need and writes working code. It's not autocomplete. You give it a problem statement, it produces files.
 
-    Browser -- "REST / WebSocket" --> Backend
-    Backend --> Orchestrator
-    Orchestrator --> CA & RA & DA & AA
-    CA & DA --> Sandbox
-    RA --> GitTools
-    CA & RA & DA & AA --> LLM
-    Backend --> Redis & PG
-```
+**Review agent** — Analyzes code diffs and pull requests. Grades issues by severity, explains what's wrong, and gives you actionable suggestions rather than vague warnings.
 
-## Tech Stack
+**Debug agent** — You paste in code and an error, it traces the failure, identifies the root cause, and produces a fix. It can also execute code in a sandboxed subprocess and work from actual runtime output.
 
-| Layer | Technology |
-|-------|-----------|
-| Backend | Python 3.12, FastAPI, Uvicorn, Pydantic v2 |
-| AI Providers | OpenAI (`gpt-4o-mini`), Anthropic (`claude-sonnet-4-6`) |
-| Frontend | React 18, TypeScript, Vite, Tailwind CSS |
-| Infrastructure | Docker, PostgreSQL 16, Redis 7, Nginx |
-| Code Quality | Ruff, pytest, vitest, GitHub Actions |
+**Architect agent** — Generates project scaffolds, writes architecture decision records, and produces Mermaid diagrams. Useful when you're starting something new and want structure before you start typing.
 
-## Quick Start
+**Multi-agent pipelines** — This is where it gets interesting. You can chain agents together: architect designs the approach, coder implements it, reviewer checks it, debugger fixes what breaks. Each agent sees what the previous one produced.
 
-### With Docker (recommended)
+**Real-time streaming** — Everything streams over WebSocket. You watch the agent think and write in real time on the dashboard, rather than waiting for a response to pop up.
+
+**Repo analysis** — Point it at a local git repository and it'll parse the structure, understand the language breakdown, read key files, and answer questions about the codebase.
+
+---
+
+## Tech stack
+
+Backend is Python with FastAPI streaming WebSocket responses. AI providers are OpenAI (gpt-4o-mini) and Anthropic (claude-sonnet-4-6) — you can switch between them with a config flag. The code sandbox runs in a restricted subprocess with timeout and resource limits so it can't do anything destructive. Frontend is React 18 with TypeScript and Tailwind CSS, built on Vite. PostgreSQL stores task history and agent results. Redis handles caching and session state.
+
+---
+
+## How to run it
+
+**Prerequisites**: Docker and Docker Compose. One of `OPENAI_API_KEY` or `ANTHROPIC_API_KEY`.
+
+**1. Clone the repo**
 
 ```bash
-git clone <repo-url> && cd omni-agent
-cp .env.example .env        # Fill in your API keys
+git clone https://github.com/isidhartha/omni-agent.git
+cd omni-agent
+```
+
+**2. Set up your config**
+
+```bash
+cp .env.example .env
+```
+
+Open `.env` and paste in your API key:
+
+```
+OPENAI_API_KEY=sk-your-key-here
+# or
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+```
+
+**3. Start everything**
+
+```bash
 docker-compose up --build
 ```
 
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
-- API Docs: http://localhost:8000/docs
+First build takes a few minutes while it installs dependencies. After that it comes up in seconds.
 
-### Manual Setup
+**4. Open the dashboard**
+
+Go to `http://localhost:3000`. You'll see the agent workspace — pick an agent from the sidebar and describe your task in the input box.
+
+---
+
+## Without Docker
+
+If you want to run it locally without containers:
 
 ```bash
-bash scripts/setup.sh
-
-# Terminal 1 — Backend
+# Backend
 cd backend
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate       # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 uvicorn main:app --reload
 
-# Terminal 2 — Frontend
+# Frontend (separate terminal)
 cd frontend
-npm run dev                  # http://localhost:5173
+npm install
+npm run dev
 ```
 
-## Environment Variables
+Backend runs on port 8000, frontend on 5173.
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `OPENAI_API_KEY` | OpenAI API key | (empty) |
-| `ANTHROPIC_API_KEY` | Anthropic API key | (empty) |
-| `DATABASE_URL` | PostgreSQL connection string | see `.env.example` |
-| `REDIS_URL` | Redis connection string | `redis://redis:6379` |
-| `SECRET_KEY` | Application secret | change in production |
-| `MAX_AGENT_ITERATIONS` | Max LLM loops per task | `10` |
-| `SANDBOX_TIMEOUT` | Code execution timeout (seconds) | `30` |
+---
 
-> At least one of `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` must be set for real LLM responses. Without keys the platform runs in stub mode for development.
+## API
 
-## API Reference
+Swagger UI is at `http://localhost:8000/docs` when the backend is running.
 
-See [docs/API.md](docs/API.md) for the full API reference.
-
-### Key endpoints
+Key endpoints:
 
 ```
-GET  /health                   — Service health check
-GET  /api/v1/agents            — List available agents
-POST /api/v1/agent/run         — Run a single agent
-POST /api/v1/repo/analyze      — Analyse a local repository
+POST /api/v1/agent/run         — Run a single agent on a task
+POST /api/v1/repo/analyze      — Analyze a local repository
 POST /api/v1/pr/review         — Review a PR diff
-POST /api/v1/debug             — Debug code + error
-WS   /ws/agent/{task_id}       — Stream agent output
+POST /api/v1/debug             — Debug code + error trace
+WS   /ws/agent/{task_id}       — Stream agent output in real time
 ```
 
-## Project Structure
+Full reference is in [docs/API.md](docs/API.md).
+
+---
+
+## Configuration
+
+| Variable | What it does | Default |
+|---|---|---|
+| `OPENAI_API_KEY` | OpenAI API access | — |
+| `ANTHROPIC_API_KEY` | Anthropic API access | — |
+| `DATABASE_URL` | PostgreSQL connection | see `.env.example` |
+| `REDIS_URL` | Redis connection | `redis://redis:6379` |
+| `MAX_AGENT_ITERATIONS` | How many LLM loops per task before stopping | `10` |
+| `SANDBOX_TIMEOUT` | Code execution timeout in seconds | `30` |
+
+Without a real API key the platform runs in stub mode — useful for exploring the UI but agents won't produce real output.
+
+---
+
+## Project layout
 
 ```
 omni-agent/
 ├── backend/
-│   ├── main.py               # FastAPI app entry point
-│   ├── agents/               # Specialised AI agents
-│   ├── tools/                # Git, sandbox, diff, code utilities
-│   └── shared/               # Config, logging, Pydantic models
+│   ├── main.py          # FastAPI entry point
+│   ├── agents/          # CodingAgent, ReviewAgent, DebugAgent, ArchitectAgent
+│   ├── tools/           # Git, sandbox, diff, code analysis utilities
+│   └── shared/          # Config, logging, Pydantic models
 ├── frontend/
 │   └── src/
-│       ├── components/       # AgentChat, PRReviewer, Terminal, ...
-│       └── pages/            # Dashboard, AgentWorkspace
-├── docs/                     # Architecture and API docs
-├── scripts/                  # Setup automation
+│       ├── components/  # AgentChat, PRReviewer, Terminal, StreamOutput
+│       └── pages/       # Dashboard, AgentWorkspace
+├── docs/
+├── scripts/
 ├── Dockerfile
 └── docker-compose.yml
 ```
 
-## Inspired By
-
-OmniAgent is inspired by the ideas and designs of these excellent open-source projects:
-
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) — autonomous software development agents
-- [SWE-agent](https://github.com/princeton-nlp/SWE-agent) — LLM agents for software engineering tasks
-- [crewAI](https://github.com/crewAIInc/crewAI) — multi-agent orchestration framework
-- [ChatDev](https://github.com/OpenBMB/ChatDev) — LLM-based software development simulation
-- [pr-agent](https://github.com/Codium-ai/pr-agent) — AI-powered code review
-
-OmniAgent is an original implementation and does not copy or redistribute code from any of the above.
+---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before sending a PR. The agent system is modular — adding a new agent type is straightforward if you follow the existing pattern.
+
+---
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. Do whatever you want with it.
