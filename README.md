@@ -69,6 +69,42 @@ Go to `http://localhost:3000`. You'll see the agent workspace — pick an agent 
 
 ---
 
+## Free local LLM option (no API key needed)
+
+If you don't have OpenAI API credits, you can run OmniAgent entirely for free using [Ollama](https://ollama.com) — a local LLM runner that works on Mac, Linux, and Windows.
+
+**1. Install Ollama**
+
+Download and install from https://ollama.com. It takes about 2 minutes.
+
+**2. Pull the model**
+
+```bash
+ollama pull llama3.2
+```
+
+This downloads a ~2GB model to your machine. You only do this once.
+
+**3. Set the provider in your `.env`**
+
+```
+LLM_PROVIDER=ollama
+```
+
+Leave `OPENAI_API_KEY` blank — it won't be used.
+
+**4. Start OmniAgent as normal**
+
+```bash
+docker-compose up --build
+```
+
+Ollama needs to be running on your host machine (not inside Docker). If you want to run it inside Docker too, uncomment the `ollama` service in `docker-compose.yml`.
+
+> **Switching back to OpenAI**: set `LLM_PROVIDER=openai` and add your `OPENAI_API_KEY`.
+
+---
+
 ## Without Docker
 
 If you want to run it locally without containers:

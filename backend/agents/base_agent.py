@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import abc
+import asyncio
 import json
 from typing import Any, AsyncIterator, Optional
 
 from shared.config import get_settings
 from shared.logging import AgentLogger
 from shared.models import AgentType
+import llm_service
 
 
 class BaseAgent(abc.ABC):
@@ -35,7 +37,11 @@ class BaseAgent(abc.ABC):
         yield result
 
     async def _call_llm(self, prompt: str, system: str = "") -> str:
-        """Call the available LLM provider. Falls back to a stub response."""
+        """Call the configured LLM provider. Supports Ollama, OpenAI, and Anthropic."""
+        if llm_service.LLM_PROVIDER == "ollama":
+            return await asyncio.get_event_loop().run_in_executor(
+                None, lambda: llm_service.complete(prompt, system=system or None)
+            )
         if self._settings.has_openai:
             return await self._call_openai(prompt, system)
         if self._settings.has_anthropic:

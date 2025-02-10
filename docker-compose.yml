@@ -40,6 +40,7 @@ services:
     environment:
       DATABASE_URL: postgresql://omniagent:password@postgres:5432/omniagent
       REDIS_URL: redis://redis:6379
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
     depends_on:
       postgres:
         condition: service_healthy
@@ -64,6 +65,14 @@ services:
     depends_on:
       - backend
 
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+
 volumes:
   postgres_data:
   redis_data:
+  # ollama_data:

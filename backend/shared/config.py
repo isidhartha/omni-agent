@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     openai_api_key: str = Field(default="", alias="OPENAI_API_KEY")
     anthropic_api_key: str = Field(default="", alias="ANTHROPIC_API_KEY")
 
+    # Local LLM (Ollama)
+    LLM_PROVIDER: str = Field(default="openai", env="LLM_PROVIDER")
+    OLLAMA_BASE_URL: str = Field(default="http://localhost:11434", env="OLLAMA_BASE_URL")
+    OLLAMA_MODEL: str = Field(default="llama3.2", env="OLLAMA_MODEL")
+
     # Database
     database_url: str = Field(
         default="postgresql://omniagent:password@localhost:5432/omniagent",
