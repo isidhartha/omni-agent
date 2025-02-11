@@ -1,0 +1,13 @@
+{
+  "name": "@isidhartha/omni-agent",
+  "version": "1.0.0",
+  "description": "Node.js client for OmniAgent — run AI coding agents, review PRs, debug code, and stream results programmatically",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {"type": "git", "url": "https://github.com/isidhartha/omni-agent.git"},
+  "homepage": "https://github.com/isidhartha/omni-agent#readme",
+  "keywords": ["ai", "agents", "code-review", "debugging", "omni-agent"],
+  "author": "Sidhartha <ramsiddhartha71154@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {"registry": "https://npm.pkg.github.com", "access": "public"}
+}
