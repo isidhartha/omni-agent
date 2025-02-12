@@ -65,7 +65,7 @@ First build takes a few minutes while it installs dependencies. After that it co
 
 **4. Open the dashboard**
 
-Go to `http://localhost:3000`. You'll see the agent workspace — pick an agent from the sidebar and describe your task in the input box.
+Go to `http://localhost:3000`. Pick an agent from the sidebar and describe your task in the input box.
 
 ---
 
