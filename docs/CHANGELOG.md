@@ -9,3 +9,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-21] fix: log level override not working
 [2026-02-21] coder agent context window
 [2026-02-21] agent config validation
+[2026-02-21] test: more edge cases
