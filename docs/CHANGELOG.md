@@ -14,3 +14,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-21] pipeline error recovery
 [2026-02-22] retry logic improved
 [2026-02-22] small improvement
+[2026-02-22] chore: update dependencies
