@@ -16,3 +16,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-22] small improvement
 [2026-02-22] chore: update dependencies
 [2026-02-22] formatting cleanup
+[2026-02-22] added missing docs
