@@ -22,3 +22,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-23] docs: installation steps update
 [2026-02-23] style: consistent indentation
 [2026-02-23] docs: docker setup clarification
+[2026-02-25] fix: lint errors
