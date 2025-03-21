@@ -25,3 +25,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-25] fix: lint errors
 [2026-02-25] docs: fix typo in readme
 [2026-02-25] readme cleanup
+[2026-02-25] clearer contributing guide
