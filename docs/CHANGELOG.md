@@ -27,3 +27,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-25] readme cleanup
 [2026-02-25] clearer contributing guide
 [2026-02-26] agent memory cleanup
+[2026-02-26] cleaned up error handling
