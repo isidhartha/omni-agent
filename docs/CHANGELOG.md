@@ -30,3 +30,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-26] cleaned up error handling
 [2026-02-26] quick improvement
 [2026-02-26] regression test added
+[2026-02-26] fixed wrong import path
