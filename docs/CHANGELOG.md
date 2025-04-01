@@ -33,3 +33,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-26] fixed wrong import path
 [2026-02-26] tool call retry logic
 [2026-02-27] more test coverage
+[2026-02-27] response streaming fix
