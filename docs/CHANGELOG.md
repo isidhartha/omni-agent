@@ -39,3 +39,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-27] chore: standardize naming
 [2026-02-27] session handling
 [2026-02-27] expanded architecture notes
+[2026-02-28] docs: better examples
