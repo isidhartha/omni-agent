@@ -41,3 +41,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-27] expanded architecture notes
 [2026-02-28] docs: better examples
 [2026-02-28] test cleanup
+[2026-02-28] pagination cursor fix
