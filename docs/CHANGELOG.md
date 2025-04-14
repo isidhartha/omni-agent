@@ -42,3 +42,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-28] docs: better examples
 [2026-02-28] test cleanup
 [2026-02-28] pagination cursor fix
+[2026-03-02] fixed that null crash
