@@ -44,3 +44,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-28] pagination cursor fix
 [2026-03-02] fixed that null crash
 [2026-03-02] better separation of concerns
+[2026-03-02] chore: update license year
