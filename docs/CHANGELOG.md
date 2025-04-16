@@ -45,3 +45,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-02] fixed that null crash
 [2026-03-02] better separation of concerns
 [2026-03-02] chore: update license year
+[2026-03-02] better variable names
