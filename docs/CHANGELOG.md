@@ -48,3 +48,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-02] better variable names
 [2026-03-03] chore: remove debug logs
 [2026-03-03] health check endpoint
+[2026-03-03] cors fix
