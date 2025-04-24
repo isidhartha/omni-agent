@@ -51,3 +51,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-03] cors fix
 [2026-03-03] updated setup docs
 [2026-03-03] fixed config override bug
+[2026-03-04] filter improvement
