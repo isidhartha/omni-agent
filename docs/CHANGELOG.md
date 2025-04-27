@@ -54,3 +54,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-04] filter improvement
 [2026-03-04] tweaks
 [2026-03-04] docs: clearer setup instructions
+[2026-03-04] mocked external dependencies
