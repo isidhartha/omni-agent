@@ -59,3 +59,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-04] renamed for clarity
 [2026-03-05] task cancellation handling
 [2026-03-05] multi-agent coordination
+[2026-03-05] sandbox process cleanup
