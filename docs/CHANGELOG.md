@@ -61,3 +61,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-05] multi-agent coordination
 [2026-03-05] sandbox process cleanup
 [2026-03-05] improve readability
+[2026-03-05] faster startup
