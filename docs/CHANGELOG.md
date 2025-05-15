@@ -63,3 +63,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-05] improve readability
 [2026-03-05] faster startup
 [2026-03-06] tests passing now
+[2026-03-06] added code examples to docs
