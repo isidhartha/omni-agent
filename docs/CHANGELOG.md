@@ -65,3 +65,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-06] tests passing now
 [2026-03-06] added code examples to docs
 [2026-03-06] this should do it
+[2026-03-08] batch processing improvement
