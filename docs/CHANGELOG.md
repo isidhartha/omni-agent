@@ -70,3 +70,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-08] header cleanup
 [2026-03-08] chore: remove unused imports
 [2026-03-08] auth token refresh
+[2026-03-08] better type handling
