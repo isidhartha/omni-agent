@@ -73,3 +73,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-08] better type handling
 [2026-03-08] pr review context window
 [2026-03-09] quick fix for prod issue
+[2026-03-09] fixed outdated instructions
