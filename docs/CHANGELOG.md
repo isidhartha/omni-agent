@@ -76,3 +76,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-09] fixed outdated instructions
 [2026-03-09] fixed the broken test
 [2026-03-10] agent handoff timing fix
+[2026-03-10] pipeline status updates
