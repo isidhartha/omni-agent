@@ -82,3 +82,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-13] chore: rename for clarity
 [2026-03-13] early return pattern
 [2026-03-13] search ranking tweak
+[2026-03-13] consistent naming
