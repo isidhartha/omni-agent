@@ -85,3 +85,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-13] consistent naming
 [2026-03-14] hotfix: bad default config
 [2026-03-14] debug agent stack trace parsing
+[2026-03-14] fix: connection not closing properly
