@@ -87,3 +87,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-14] debug agent stack trace parsing
 [2026-03-14] fix: connection not closing properly
 [2026-03-15] cleaned up imports
+[2026-03-15] bump version
