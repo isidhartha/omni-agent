@@ -89,3 +89,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-15] cleaned up imports
 [2026-03-15] bump version
 [2026-03-15] added some tests
+[2026-03-15] llm response caching
