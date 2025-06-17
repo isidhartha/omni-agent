@@ -91,3 +91,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-15] added some tests
 [2026-03-15] llm response caching
 [2026-03-15] fix: encoding issue in response
+[2026-03-15] self review fixes
