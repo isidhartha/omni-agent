@@ -93,3 +93,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-15] fix: encoding issue in response
 [2026-03-15] self review fixes
 [2026-03-15] fix: response shape mismatch
+[2026-03-16] back to simpler approach
