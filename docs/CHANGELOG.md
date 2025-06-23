@@ -96,3 +96,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-16] back to simpler approach
 [2026-03-16] added edge case tests
 [2026-03-16] fix: timeout too short
+[2026-03-16] fix: race condition in handler
