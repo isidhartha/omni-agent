@@ -99,3 +99,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-16] fix: race condition in handler
 [2026-03-17] fix: environment variable parsing
 [2026-03-17] fix: broken unit test
+[2026-03-17] style: quote consistency
