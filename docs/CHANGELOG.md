@@ -102,3 +102,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-17] style: quote consistency
 [2026-03-17] fixed broken link in readme
 [2026-03-17] fix: edge case with empty input
+[2026-03-17] null safety improvement
