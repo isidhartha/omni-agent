@@ -105,3 +105,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-17] null safety improvement
 [2026-03-17] almost there
 [2026-03-17] agent result serialization
+[2026-03-17] first pass
