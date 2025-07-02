@@ -106,3 +106,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-17] almost there
 [2026-03-17] agent result serialization
 [2026-03-17] first pass
+[2026-03-17] guard clause cleanup
