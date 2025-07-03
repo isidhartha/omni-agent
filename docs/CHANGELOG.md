@@ -108,3 +108,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-17] first pass
 [2026-03-17] guard clause cleanup
 [2026-03-17] fixed edge case in prod
+[2026-03-18] input bounds check
