@@ -113,3 +113,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-18] cleaned up util functions
 [2026-03-18] streaming response stability
 [2026-03-20] test: fix flaky test
+[2026-03-20] chore: gitignore update
