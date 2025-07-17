@@ -120,3 +120,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-20] review agent output formatting
 [2026-03-20] task history pagination
 [2026-03-21] progress
+[2026-03-21] fix: typo in error message
