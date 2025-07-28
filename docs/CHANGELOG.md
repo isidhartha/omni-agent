@@ -126,3 +126,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-22] fixed timeout handling
 [2026-03-22] refactor: simplify logic
 [2026-03-22] addressed feedback
+[2026-03-22] stricter validation
