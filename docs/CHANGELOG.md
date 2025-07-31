@@ -128,3 +128,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-22] addressed feedback
 [2026-03-22] stricter validation
 [2026-03-23] removed debug prints
+[2026-03-23] fix: null check was missing
