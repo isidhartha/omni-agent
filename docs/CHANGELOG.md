@@ -134,3 +134,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-23] alternative approach
 [2026-03-23] removed magic numbers
 [2026-03-23] websocket reconnect on disconnect
+[2026-03-23] fix: wrong variable used
