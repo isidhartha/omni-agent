@@ -137,3 +137,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-23] fix: wrong variable used
 [2026-03-24] api docs update
 [2026-03-24] reorganized files
+[2026-03-24] named the constants
