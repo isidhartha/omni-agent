@@ -142,3 +142,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-24] hotfix: null dereference
 [2026-03-24] minor cleanup
 [2026-03-24] prompt template improvements
+[2026-03-25] trying a different approach
