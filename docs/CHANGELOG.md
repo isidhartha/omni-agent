@@ -144,3 +144,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-24] prompt template improvements
 [2026-03-25] trying a different approach
 [2026-03-25] fix: bad import path
+[2026-03-29] minor tweaks
