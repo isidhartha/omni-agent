@@ -147,3 +147,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-29] minor tweaks
 [2026-03-29] simplified conditional
 [2026-03-29] refactor: extract constants
+[2026-03-29] timeout tuning
