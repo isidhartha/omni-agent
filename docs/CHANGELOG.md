@@ -153,3 +153,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-31] cleanup
 [2026-03-31] code cleanup
 [2026-03-31] removed old commented code
+[2026-03-31] removed unused dependencies
