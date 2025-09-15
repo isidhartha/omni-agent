@@ -155,3 +155,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-31] removed old commented code
 [2026-03-31] removed unused dependencies
 [2026-03-31] fixed failing test
+[2026-04-01] squash commits
