@@ -161,3 +161,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-01] got it working
 [2026-04-01] it works now
 [2026-04-02] documentation cleanup
+[2026-04-02] improved test assertions
