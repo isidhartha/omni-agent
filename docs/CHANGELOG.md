@@ -167,3 +167,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-04] llm provider fallback
 [2026-04-04] better getting started guide
 [2026-04-04] agent timeout configuration
+[2026-04-04] general cleanup
