@@ -171,3 +171,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-05] consolidate duplicate logic
 [2026-04-05] merge fixes
 [2026-04-05] graceful shutdown
+[2026-04-05] fix: config values not loading
