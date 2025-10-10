@@ -173,3 +173,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-05] graceful shutdown
 [2026-04-05] fix: config values not loading
 [2026-04-05] fix: off by one
+[2026-04-05] docs: note about environment variables
