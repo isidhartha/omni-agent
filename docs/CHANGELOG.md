@@ -175,3 +175,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-05] fix: off by one
 [2026-04-05] docs: note about environment variables
 [2026-04-05] removed dead code
+[2026-04-05] updated env example file
