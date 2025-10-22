@@ -181,3 +181,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-05] test: add basic unit tests
 [2026-04-06] improved test reliability
 [2026-04-06] code review fixes
+[2026-04-06] polish
