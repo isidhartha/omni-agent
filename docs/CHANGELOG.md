@@ -182,3 +182,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-06] improved test reliability
 [2026-04-06] code review fixes
 [2026-04-06] polish
+[2026-04-07] reduce nesting
