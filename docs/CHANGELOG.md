@@ -184,3 +184,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-06] polish
 [2026-04-07] reduce nesting
 [2026-04-07] optimized hot path
+[2026-04-08] post merge cleanup
