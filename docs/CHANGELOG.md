@@ -186,3 +186,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-07] optimized hot path
 [2026-04-08] post merge cleanup
 [2026-04-08] sync with main
+[2026-04-08] reverted bad change
