@@ -193,3 +193,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-09] docs: api reference update
 [2026-04-09] whitespace fix
 [2026-04-09] fixed error propagation
+[2026-04-10] readme improvements
