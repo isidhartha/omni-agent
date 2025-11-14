@@ -196,3 +196,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-10] readme improvements
 [2026-04-10] perf: avoid redundant computation
 [2026-04-12] cleaned up after merge
+[2026-04-12] chore: bump package versions
