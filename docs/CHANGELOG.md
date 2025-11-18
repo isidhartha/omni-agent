@@ -198,3 +198,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-12] cleaned up after merge
 [2026-04-12] chore: bump package versions
 [2026-04-12] rough draft
+[2026-04-13] sensible defaults
