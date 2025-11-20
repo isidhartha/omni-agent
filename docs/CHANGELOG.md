@@ -202,3 +202,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-13] version bump
 [2026-04-13] test: improve mock setup
 [2026-04-13] fixed race condition in handler
+[2026-04-14] removed unused variables
