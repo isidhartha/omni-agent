@@ -207,3 +207,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-15] agent chain output format
 [2026-04-15] test: better assertions
 [2026-04-16] cache invalidation fix
+[2026-04-16] updated changelog
