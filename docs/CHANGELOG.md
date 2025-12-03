@@ -210,3 +210,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-16] updated changelog
 [2026-04-16] better agent error messages
 [2026-04-16] cache ttl adjustment
+[2026-04-16] packages updated
