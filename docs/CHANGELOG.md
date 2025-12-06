@@ -213,3 +213,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-16] packages updated
 [2026-04-16] fix: missing return statement
 [2026-04-16] docs: update readme
+[2026-04-17] perf: cache the result
