@@ -221,3 +221,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-18] clearer docs
 [2026-04-18] reduced unnecessary work
 [2026-04-18] request validation
+[2026-04-20] fixed missing null checks
