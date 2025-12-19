@@ -224,3 +224,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-20] fixed missing null checks
 [2026-04-20] small fix
 [2026-04-20] fixed response format issue
+[2026-04-20] improved api documentation
