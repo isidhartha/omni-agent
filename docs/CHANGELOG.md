@@ -227,3 +227,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-20] improved api documentation
 [2026-04-20] final touches
 [2026-04-20] address review feedback
+[2026-04-21] graceful degradation
