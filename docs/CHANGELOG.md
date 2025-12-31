@@ -230,3 +230,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-21] graceful degradation
 [2026-04-21] startup time improvement
 [2026-04-22] fix: wrong status code
+[2026-04-22] fixed typo in comment
