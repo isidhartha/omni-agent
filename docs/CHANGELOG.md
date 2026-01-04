@@ -233,3 +233,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-22] fixed typo in comment
 [2026-04-22] docs: update changelog
 [2026-04-22] docker build fix
+[2026-04-22] async fix
