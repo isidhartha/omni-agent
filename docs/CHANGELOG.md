@@ -236,3 +236,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-22] async fix
 [2026-04-22] db index added
 [2026-04-23] all tests green
+[2026-04-23] duplicate task prevention
