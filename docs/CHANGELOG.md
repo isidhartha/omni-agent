@@ -238,3 +238,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-23] all tests green
 [2026-04-23] duplicate task prevention
 [2026-04-23] better concurrency
+[2026-04-25] repo analysis path handling
