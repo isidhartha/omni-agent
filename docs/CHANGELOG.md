@@ -243,3 +243,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-25] coder agent context window
 [2026-04-26] agent config validation
 [2026-04-26] test: more edge cases
+[2026-04-26] chore: remove dead code
