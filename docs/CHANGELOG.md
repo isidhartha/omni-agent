@@ -246,3 +246,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-26] chore: remove dead code
 [2026-04-27] pipeline error recovery
 [2026-04-27] retry logic improved
+[2026-04-28] small improvement
