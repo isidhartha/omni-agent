@@ -249,3 +249,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-28] small improvement
 [2026-04-28] chore: update dependencies
 [2026-04-28] formatting cleanup
+[2026-04-28] added missing docs
