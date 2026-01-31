@@ -254,3 +254,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-30] test fixtures update
 [2026-04-30] docs: installation steps update
 [2026-05-01] style: consistent indentation
+[2026-05-01] docs: docker setup clarification
