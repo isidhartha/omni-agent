@@ -271,3 +271,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-06] diff parser edge case
 [2026-05-06] chore: standardize naming
 [2026-05-07] session handling
+[2026-05-07] expanded architecture notes
