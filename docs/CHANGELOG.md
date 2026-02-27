@@ -273,3 +273,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-07] session handling
 [2026-05-07] expanded architecture notes
 [2026-05-07] docs: better examples
+[2026-05-07] test cleanup
