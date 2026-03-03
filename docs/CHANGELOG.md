@@ -276,3 +276,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-07] test cleanup
 [2026-05-08] pagination cursor fix
 [2026-05-08] fixed that null crash
+[2026-05-08] better separation of concerns
