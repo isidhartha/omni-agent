@@ -279,3 +279,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-08] better separation of concerns
 [2026-05-08] chore: update license year
 [2026-05-08] better variable names
+[2026-05-08] chore: remove debug logs
