@@ -281,3 +281,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-08] better variable names
 [2026-05-08] chore: remove debug logs
 [2026-05-08] health check endpoint
+[2026-05-09] cors fix
