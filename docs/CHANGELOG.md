@@ -285,3 +285,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-09] updated setup docs
 [2026-05-09] fixed config override bug
 [2026-05-09] filter improvement
+[2026-05-09] tweaks
