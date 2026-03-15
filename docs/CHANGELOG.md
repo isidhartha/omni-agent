@@ -286,3 +286,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-09] fixed config override bug
 [2026-05-09] filter improvement
 [2026-05-09] tweaks
+[2026-05-10] docs: clearer setup instructions
