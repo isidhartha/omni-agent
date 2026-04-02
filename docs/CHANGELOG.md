@@ -293,3 +293,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-10] task cancellation handling
 [2026-05-11] multi-agent coordination
 [2026-05-11] sandbox process cleanup
+[2026-05-11] improve readability
