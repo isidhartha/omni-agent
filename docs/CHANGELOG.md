@@ -299,3 +299,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-11] added code examples to docs
 [2026-05-11] this should do it
 [2026-05-12] batch processing improvement
+[2026-05-12] signal handling
