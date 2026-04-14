@@ -302,3 +302,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-12] signal handling
 [2026-05-12] header cleanup
 [2026-05-12] chore: remove unused imports
+[2026-05-12] auth token refresh
