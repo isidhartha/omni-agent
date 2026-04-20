@@ -305,3 +305,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-12] auth token refresh
 [2026-05-13] better type handling
 [2026-05-13] pr review context window
+[2026-05-13] quick fix for prod issue
