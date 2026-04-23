@@ -308,3 +308,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-13] quick fix for prod issue
 [2026-05-13] fixed outdated instructions
 [2026-05-13] fixed the broken test
+[2026-05-13] agent handoff timing fix
