@@ -311,3 +311,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-13] agent handoff timing fix
 [2026-05-14] pipeline status updates
 [2026-05-14] task queue overflow handling
+[2026-05-16] chore: cleanup old scripts
