@@ -315,3 +315,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-16] chore: rename for clarity
 [2026-05-16] early return pattern
 [2026-05-16] search ranking tweak
+[2026-05-16] consistent naming
