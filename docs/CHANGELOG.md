@@ -316,3 +316,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-16] early return pattern
 [2026-05-16] search ranking tweak
 [2026-05-16] consistent naming
+[2026-05-17] hotfix: bad default config
