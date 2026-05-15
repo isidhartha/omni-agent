@@ -321,3 +321,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-17] fix: connection not closing properly
 [2026-05-17] cleaned up imports
 [2026-05-18] bump version
+[2026-05-18] added some tests
