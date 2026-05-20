@@ -2,6 +2,17 @@
 
 [![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-agent)](https://github.com/isidhartha/omni-agent/discussions)
 
+## Demo
+
+![Demo](docs/images/demo.gif)
+
+### Screenshots
+
+| Desktop | Feature View | Mobile |
+|---------|-------------|--------|
+| ![Desktop](docs/images/screenshot_desktop.png) | ![Feature](docs/images/screenshot_feature.png) | ![Mobile](docs/images/screenshot_mobile.png) |
+
+
 I built OmniAgent because I kept running into the same wall: AI coding assistants are great at answering questions, but they can't actually *do* anything. They suggest. You implement. OmniAgent flips that. It's a platform where multiple specialized AI agents work together — one writes code, one reviews it, one debugs it, one thinks about the architecture — and they hand work off to each other in a real pipeline.
 
 The idea is that you describe a task, and the agents figure out how to tackle it from every angle without you babysitting the process.
