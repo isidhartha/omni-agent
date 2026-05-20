@@ -4,12 +4,12 @@
 
 ## Demo
 
-![Demo](docs/images/demo.gif)
+![Demo Animation](docs/images/demo.gif)
 
 ### Screenshots
 
-| Desktop | Feature View | Mobile |
-|---------|-------------|--------|
+| Desktop Dashboard | Feature View | Mobile View |
+|------------------|--------------|--------------|
 | ![Desktop](docs/images/screenshot_desktop.png) | ![Feature](docs/images/screenshot_feature.png) | ![Mobile](docs/images/screenshot_mobile.png) |
 
 
@@ -167,7 +167,7 @@ Full reference is in [docs/API.md](docs/API.md).
 ## Configuration
 
 | Variable | What it does | Default |
-|---|---|---|
+|------------------|--------------|--------------|
 | `OPENAI_API_KEY` | OpenAI API access | — |
 | `ANTHROPIC_API_KEY` | Anthropic API access | — |
 | `DATABASE_URL` | PostgreSQL connection | see `.env.example` |
