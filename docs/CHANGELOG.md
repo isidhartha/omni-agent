@@ -327,3 +327,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-18] self review fixes
 [2026-05-18] fix: response shape mismatch
 [2026-05-18] back to simpler approach
+[2026-05-20] fix: add null guard in tool response deserialization
