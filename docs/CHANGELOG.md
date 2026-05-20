@@ -234,96 +234,96 @@ Running log of changes. Most recent at the bottom.
 [2026-04-22] docs: update changelog
 [2026-04-22] docker build fix
 [2026-04-22] async fix
-[2026-04-22] db index added
-[2026-04-23] all tests green
-[2026-04-23] duplicate task prevention
-[2026-04-23] better concurrency
-[2026-04-25] repo analysis path handling
-[2026-04-25] fix: log level override not working
-[2026-04-25] coder agent context window
-[2026-04-26] agent config validation
-[2026-04-26] test: more edge cases
-[2026-04-26] chore: remove dead code
-[2026-04-27] pipeline error recovery
-[2026-04-27] retry logic improved
-[2026-04-28] small improvement
-[2026-04-28] chore: update dependencies
-[2026-04-28] formatting cleanup
-[2026-04-28] added missing docs
-[2026-04-28] finishing up
-[2026-04-30] test fixtures update
-[2026-04-30] docs: installation steps update
-[2026-05-01] style: consistent indentation
-[2026-05-01] docs: docker setup clarification
-[2026-05-01] fix: lint errors
-[2026-05-01] docs: fix typo in readme
-[2026-05-01] readme cleanup
-[2026-05-01] clearer contributing guide
-[2026-05-05] agent memory cleanup
-[2026-05-05] cleaned up error handling
-[2026-05-05] quick improvement
-[2026-05-05] regression test added
-[2026-05-05] fixed wrong import path
-[2026-05-06] tool call retry logic
-[2026-05-06] more test coverage
-[2026-05-06] response streaming fix
-[2026-05-06] connection pool sizing
-[2026-05-06] diff parser edge case
-[2026-05-06] chore: standardize naming
-[2026-05-07] session handling
-[2026-05-07] expanded architecture notes
-[2026-05-07] docs: better examples
-[2026-05-07] test cleanup
-[2026-05-08] pagination cursor fix
-[2026-05-08] fixed that null crash
-[2026-05-08] better separation of concerns
-[2026-05-08] chore: update license year
-[2026-05-08] better variable names
-[2026-05-08] chore: remove debug logs
-[2026-05-08] health check endpoint
-[2026-05-09] cors fix
-[2026-05-09] updated setup docs
-[2026-05-09] fixed config override bug
-[2026-05-09] filter improvement
-[2026-05-09] tweaks
-[2026-05-10] docs: clearer setup instructions
-[2026-05-10] mocked external dependencies
-[2026-05-10] moved to config
-[2026-05-10] renamed for clarity
-[2026-05-10] task cancellation handling
-[2026-05-11] multi-agent coordination
-[2026-05-11] sandbox process cleanup
-[2026-05-11] improve readability
-[2026-05-11] faster startup
-[2026-05-11] tests passing now
-[2026-05-11] added code examples to docs
-[2026-05-11] this should do it
-[2026-05-12] batch processing improvement
-[2026-05-12] signal handling
-[2026-05-12] header cleanup
-[2026-05-12] chore: remove unused imports
-[2026-05-12] auth token refresh
-[2026-05-13] better type handling
-[2026-05-13] pr review context window
-[2026-05-13] quick fix for prod issue
-[2026-05-13] fixed outdated instructions
-[2026-05-13] fixed the broken test
-[2026-05-13] agent handoff timing fix
-[2026-05-14] pipeline status updates
-[2026-05-14] task queue overflow handling
-[2026-05-16] chore: cleanup old scripts
-[2026-05-16] chore: rename for clarity
-[2026-05-16] early return pattern
-[2026-05-16] search ranking tweak
-[2026-05-16] consistent naming
-[2026-05-17] hotfix: bad default config
-[2026-05-17] debug agent stack trace parsing
-[2026-05-17] fix: connection not closing properly
-[2026-05-17] cleaned up imports
-[2026-05-18] bump version
-[2026-05-18] added some tests
-[2026-05-18] llm response caching
-[2026-05-18] fix: encoding issue in response
-[2026-05-18] self review fixes
-[2026-05-18] fix: response shape mismatch
-[2026-05-18] back to simpler approach
+[2026-04-22] index for hot query
+[2026-04-23] test suite green after refactor
+[2026-04-23] quick pass
+[2026-04-23] parallelize operations
+[2026-04-25] cleanup round 2
+[2026-04-25] fix: logging config
+[2026-04-25] minor fix
+[2026-04-26] cleanup pass
+[2026-04-26] add edge case tests
+[2026-04-26] remove stale code
+[2026-04-27] misc tweaks
+[2026-04-27] better retry strategy
+[2026-04-28] tweak
+[2026-04-28] bump minor deps
+[2026-04-28] code style pass
+[2026-04-28] add missing documentation
+[2026-04-28] last bits
+[2026-04-30] tidy
+[2026-04-30] installation guide update
+[2026-05-01] normalize indentation
+[2026-05-01] clarify docker config
+[2026-05-01] fix lint warnings
+[2026-05-01] typo fix in docs
+[2026-05-01] tidy up readme
+[2026-05-01] improve contributor docs
+[2026-05-05] cleanup round 2
+[2026-05-05] error handling cleanup
+[2026-05-05] small win
+[2026-05-05] another fix
+[2026-05-05] forgot this
+[2026-05-06] tweak
+[2026-05-06] misc tweaks
+[2026-05-06] cleanup
+[2026-05-06] adjust pool size
+[2026-05-06] maintenance
+[2026-05-06] consistent naming throughout
+[2026-05-07] session management
+[2026-05-07] update arch docs
+[2026-05-07] better example code
+[2026-05-07] small win
+[2026-05-08] fix pagination logic
+[2026-05-08] follow-up
+[2026-05-08] separate responsibilities
+[2026-05-08] license header update
+[2026-05-08] clearer names
+[2026-05-08] remove leftover logs
+[2026-05-08] health check api
+[2026-05-09] fix cors headers
+[2026-05-09] tidy
+[2026-05-09] minor update
+[2026-05-09] better filter logic
+[2026-05-09] misc
+[2026-05-10] clarify setup steps
+[2026-05-10] small improvement
+[2026-05-10] make configurable
+[2026-05-10] rename for readability
+[2026-05-10] minor fix
+[2026-05-11] polish
+[2026-05-11] tweak
+[2026-05-11] polish
+[2026-05-11] one more thing
+[2026-05-11] all checks passing
+[2026-05-11] code examples in docs
+[2026-05-11] worth a shot
+[2026-05-12] small improvement
+[2026-05-12] minor fix
+[2026-05-12] missed this
+[2026-05-12] prune imports
+[2026-05-12] handle token expiry
+[2026-05-13] type checking
+[2026-05-13] follow-up
+[2026-05-13] urgent prod fix
+[2026-05-13] misc
+[2026-05-13] tweak
+[2026-05-13] one more thing
+[2026-05-14] housekeeping
+[2026-05-14] missed this
+[2026-05-16] clean up old tooling
+[2026-05-16] better names everywhere
+[2026-05-16] guard clauses
+[2026-05-16] ranking adjustment
+[2026-05-16] uniform naming
+[2026-05-17] one more thing
+[2026-05-17] small improvement
+[2026-05-17] fix: close connection
+[2026-05-17] import cleanup
+[2026-05-18] bump patch version
+[2026-05-18] a few more tests
+[2026-05-18] improve
+[2026-05-18] fix: response encoding
+[2026-05-18] forgot this
+[2026-05-18] fix: response schema
+[2026-05-18] revert to simpler solution
