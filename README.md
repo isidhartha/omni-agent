@@ -65,8 +65,6 @@ Open `.env` and paste in your API key:
 ```
 OPENAI_API_KEY=sk-your-key-here
 # or
-
-[![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-agent)](https://github.com/isidhartha/omni-agent/discussions)
 ANTHROPIC_API_KEY=sk-ant-your-key-here
 ```
 
@@ -126,8 +124,6 @@ If you want to run it locally without containers:
 
 ```bash
 # Backend
-
-[![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-agent)](https://github.com/isidhartha/omni-agent/discussions)
 cd backend
 python -m venv .venv
 source .venv/bin/activate       # Windows: .venv\Scripts\activate
@@ -135,8 +131,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 
 # Frontend (separate terminal)
-
-[![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-agent)](https://github.com/isidhartha/omni-agent/discussions)
 cd frontend
 npm install
 npm run dev
