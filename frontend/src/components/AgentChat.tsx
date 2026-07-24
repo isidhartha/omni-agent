@@ -52,7 +52,8 @@ export default function AgentChat(): React.ReactElement {
     addMessage({ role: "user", content: task });
 
     const taskId = crypto.randomUUID();
-    const wsUrl = `ws://${window.location.hostname}:8000/ws/agent/${taskId}`;
+    const wsProto = window.location.protocol === "https:" ? "wss" : "ws";
+    const wsUrl = `${wsProto}://${window.location.host}/ws/agent/${taskId}`;
 
     try {
       const ws = new WebSocket(wsUrl);
