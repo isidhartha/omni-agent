@@ -42,13 +42,13 @@ class Settings(BaseSettings):
 
     @property
     def has_openai(self) -> bool:
-        return bool(self.openai_api_key and self.openai_api_key != "your_openai_key_here")
+        return bool(self.openai_api_key and "your_" not in self.openai_api_key.lower())
 
     @property
     def has_anthropic(self) -> bool:
         return bool(
             self.anthropic_api_key
-            and self.anthropic_api_key != "your_anthropic_key_here"
+            and "your_" not in self.anthropic_api_key.lower()
         )
 
 

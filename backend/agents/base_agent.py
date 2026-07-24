@@ -37,16 +37,10 @@ class BaseAgent(abc.ABC):
         yield result
 
     async def _call_llm(self, prompt: str, system: str = "") -> str:
-        """Call the configured LLM provider. Supports Ollama, OpenAI, and Anthropic."""
-        if llm_service.LLM_PROVIDER == "ollama":
-            return await asyncio.get_event_loop().run_in_executor(
-                None, lambda: llm_service.complete(prompt, system=system or None)
-            )
-        if self._settings.has_openai:
-            return await self._call_openai(prompt, system)
-        if self._settings.has_anthropic:
-            return await self._call_anthropic(prompt, system)
-        return self._stub_response(prompt)
+        """Call the configured LLM provider via llm_service router."""
+        return await asyncio.get_event_loop().run_in_executor(
+            None, lambda: llm_service.complete(prompt, system=system or None)
+        )
 
     async def _call_openai(self, prompt: str, system: str) -> str:
         try:

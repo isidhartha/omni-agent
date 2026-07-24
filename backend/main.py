@@ -10,6 +10,10 @@ import os
 # Ensure backend directory is on the path when running with uvicorn
 sys.path.insert(0, os.path.dirname(__file__))
 
+from pathlib import Path as _Path
+from dotenv import load_dotenv as _load_dotenv
+_load_dotenv(_Path(__file__).parent.parent / ".env")
+
 from contextlib import asynccontextmanager
 from typing import Any, AsyncGenerator
 

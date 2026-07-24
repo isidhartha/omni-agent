@@ -43,14 +43,14 @@ class AgentLogger:
     def __init__(self, agent_name: str) -> None:
         self._log = get_logger(f"agent.{agent_name}")
 
-    def info(self, msg: str, **kw: Any) -> None:
-        self._log.info(msg, extra=kw)
+    def info(self, msg: str, *args: Any, **kw: Any) -> None:
+        self._log.info(msg % args if args else msg)
 
-    def warning(self, msg: str, **kw: Any) -> None:
-        self._log.warning(msg, extra=kw)
+    def warning(self, msg: str, *args: Any, **kw: Any) -> None:
+        self._log.warning(msg % args if args else msg)
 
-    def error(self, msg: str, **kw: Any) -> None:
-        self._log.error(msg, extra=kw)
+    def error(self, msg: str, *args: Any, **kw: Any) -> None:
+        self._log.error(msg % args if args else msg)
 
-    def debug(self, msg: str, **kw: Any) -> None:
-        self._log.debug(msg, extra=kw)
+    def debug(self, msg: str, *args: Any, **kw: Any) -> None:
+        self._log.debug(msg % args if args else msg)
