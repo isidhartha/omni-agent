@@ -35,7 +35,7 @@ class Settings(BaseSettings):
 
     # CORS
     allowed_origins: list[str] = Field(
-        default=["http://localhost:3000", "http://localhost:5173"]
+        default=["http://localhost:3001", "http://localhost:5173"]
     )
 
     model_config = {"env_file": ".env", "populate_by_name": True}

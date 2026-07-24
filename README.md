@@ -45,40 +45,58 @@ Backend is Python with FastAPI streaming WebSocket responses. AI providers are O
 
 ## How to run it
 
-**Prerequisites**: Docker and Docker Compose. One of `OPENAI_API_KEY` or `ANTHROPIC_API_KEY`.
+### Prerequisites
+- Python 3.10+
+- Node.js 18+
+- Git
+- Redis (`redis-server`)
+- PostgreSQL 13+ with database `omniagent` created
+- Ollama (optional, for running without any API key — https://ollama.com)
 
-**1. Clone the repo**
+### Setup
 
 ```bash
-git clone https://github.com/isidhartha/omni-agent.git
+# 1. Clone and enter the project
+git clone https://github.com/isidhartha/omni-agent
 cd omni-agent
-```
 
-**2. Set up your config**
+# 2. Create virtual environment
+# Windows:
+python -m venv venv
+venv\Scripts\activate
+# Mac/Linux:
+python3 -m venv venv
+source venv/bin/activate
 
-```bash
+# 3. Install Python dependencies
+pip install -r backend/requirements.txt
+
+# 4. Configure environment
+# Windows:
+copy .env.example .env
+# Mac/Linux:
 cp .env.example .env
+# Open .env and fill in at least one AI provider key
+# OR set AI_PROVIDER=ollama to run without any API key
+
+# 5. Start services
+# Redis (in a terminal):
+redis-server
+# PostgreSQL must be running — create the database once:
+# psql -U postgres -c "CREATE DATABASE omniagent;"
+
+# 6. Run the backend
+cd backend
+uvicorn main:app --reload --port 8001
+
+# 7. Run the frontend (in a new terminal, from project root)
+cd frontend
+npm install
+npm run dev -- --port 3001
 ```
 
-Open `.env` and paste in your API key:
-
-```
-OPENAI_API_KEY=sk-your-key-here
-# or
-ANTHROPIC_API_KEY=sk-ant-your-key-here
-```
-
-**3. Start everything**
-
-```bash
-docker-compose up --build
-```
-
-First build takes a few minutes while it installs dependencies. After that it comes up in seconds.
-
-**4. Open the dashboard**
-
-Go to `http://localhost:3000`. Pick an agent from the sidebar and describe your task in the input box.
+**Dashboard**: http://localhost:3001  
+**API docs**: http://localhost:8001/docs
 
 ---
 
@@ -120,23 +138,9 @@ Ollama needs to be running on your host machine (not inside Docker). If you want
 
 ## Without Docker
 
-If you want to run it locally without containers:
+See the **How to run it** section above — all instructions are native (no Docker required).
 
-```bash
-# Backend
-cd backend
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-
-# Frontend (separate terminal)
-cd frontend
-npm install
-npm run dev
-```
-
-Backend runs on port 8000, frontend on 5173.
+Ports: backend → http://localhost:8001 | frontend → http://localhost:3001
 
 ---
 
